@@ -16,17 +16,17 @@ public class AbilityButton : MonoBehaviour
 		mButton = GetComponent<Button> ();
 		mGraphic = mButton.targetGraphic;
 	}
-	public void OnClick(Player player)
+	public void OnClick()//Player player)
 	{
 		
 	}
 
-	public void OnFucus(Player player)
+	public void OnFocus()//Player player)
 	{
 		mGraphic.CrossFadeColor (mButton.colors.highlightedColor, 0.05f, true, true);
 	}
 
-	public void OnLoseFucus(Player player)
+	public void OnLoseFocus()//Player player)
 	{
 		mGraphic.CrossFadeColor (mButton.colors.normalColor, 0.05f, true, true);
 	}
